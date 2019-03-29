@@ -1,1 +1,30 @@
 // Mixins Here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordered() {
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sign-up(@justify, @aligin) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @aligin;
+}
+
+.button-creator(@width, @height, @nav-bg, @font-color, @font-size) {
+    border-radius: 15px;
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @nav-bg;
+    color: @font-color;
+    border: 1px solid @font-color;
+    cursor: pointer;
+    font-size: @font-size;
+}
