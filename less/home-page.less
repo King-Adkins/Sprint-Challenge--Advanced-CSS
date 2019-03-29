@@ -97,7 +97,26 @@
 
       .btn {
         width: 100%;
-        
+        .button-creator(200px, 45px, @wild-sand, @river-bend, 1.8rem);
+        .center;
+        .sign-up(center, center);
+        border: none;
+
+        button {
+          width: 100%;
+          height: 45px;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: blue;
+            color: yellow;
+          }
+        }
+
+        @media @phone {
+          width: 100%;
+        }
       }
     }
 
@@ -110,6 +129,9 @@
         height: auto;
         border-radius: 10px;
       }
-    }
-  }
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0;
+      }
 }// home
