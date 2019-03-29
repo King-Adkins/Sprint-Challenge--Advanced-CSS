@@ -165,7 +165,8 @@ p {
   height: 90px;
   border-bottom: 2px dashed #F1F1F1;
   position: fixed;
-  background: white;
+  background: lightblue;
+  opacity: 0.8;
   z-index: 100;
 }
 .main-nav .nav-container {
@@ -203,6 +204,50 @@ p {
   text-decoration: none;
   text-align: center;
 }
+.main-nav2 {
+  width: 100%;
+  height: 90px;
+  border-bottom: 2px dashed #F1F1F1;
+  position: fixed;
+  background: lightblue;
+  opacity: 0.8;
+  z-index: 100;
+}
+.main-nav2 .nav-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media ( max-width: 500px ) {
+  .main-nav2 .nav-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+.main-nav2 .nav-container .logo-heading {
+  font-size: 2em;
+}
+.nav {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+@media ( max-width: 500px ) {
+  .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.nav a {
+  font-size: 1.6rem;
+  color: #5E6164;
+  text-decoration: none;
+  text-align: center;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -217,6 +262,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 120px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -339,4 +385,62 @@ footer {
     width: 100%;
     margin-left: 0;
   }
+}
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid red;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: white;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+input[type=submit]:hover {
+  background-color: black;
+  color: red;
+}
+label {
+  font-size: 1.5rem;
+  color: white;
+}
+.form {
+  border-radius: 5px;
+  background-color: black;
+  padding-top: 20px;
+}
+.main-content .main-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 120px;
+  padding-top: 110px;
+}
+.main {
+  display: flex;
+}
+.main .title {
+  padding-right: 70px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.main .one {
+  padding-right: 70px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.main .two {
+  padding-top: 30px;
 }
