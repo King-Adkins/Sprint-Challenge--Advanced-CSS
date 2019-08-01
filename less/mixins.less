@@ -1,1 +1,46 @@
 // Mixins Here
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bordered() {
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.sign-up(@justify, @aligin) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @aligin;
+}
+
+.button-creator(@width, @height, @nav-bg, @font-color, @font-size) {
+    border-radius: 15px;
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @nav-bg;
+    color: @font-color;
+    border: 1px solid @font-color;
+    cursor: pointer;
+    font-size: @font-size;
+}
+
+.slide-rotate-hor-bottom() {
+	-webkit-animation: slide-rotate-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both;
+	        animation: slide-rotate-hor-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both;
+}
+
+.flip-scale-up-hor() {
+	-webkit-animation: flip-scale-up-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s reverse forwards;
+	        animation: flip-scale-up-hor 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s reverse forwards;
+}
+
+.shadow-pop-tr() {
+	-webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
+	        animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) 2s both;
+}
+
